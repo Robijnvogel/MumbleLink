@@ -50,7 +50,7 @@ import javax.management.InstanceNotFoundException;
  *
  * @author zsawyer, 2013-07-05
  */
-@Mod(modid = ExtendedPASupport.MOD_ID, useMetadata = true)
+@Mod(modid = ExtendedPASupport.MOD_ID, dependencies = "required-after:MumbleLink", useMetadata = true)
 public class ExtendedPASupport implements Activateable, IdentityManipulator {
     public static Logger LOG;
 

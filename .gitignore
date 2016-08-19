@@ -15,3 +15,8 @@ build
 *.ipr
 *.iws
 *.iml
+
+## NetBeans
+/mod/.nb-gradle/
+mod/.nb-gradle-properties
+mod/run/*
