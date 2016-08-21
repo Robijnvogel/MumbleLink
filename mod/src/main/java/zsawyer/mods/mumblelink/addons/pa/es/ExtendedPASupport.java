@@ -49,8 +49,10 @@ import javax.management.InstanceNotFoundException;
  * positional audio support (i.e. identity) based on vanilla Minecraft.
  *
  * @author zsawyer, 2013-07-05
+ * @version 1.0.0
  */
-@Mod(modid = ExtendedPASupport.MOD_ID, dependencies = "required-after:MumbleLink", useMetadata = true)
+// FIX for #10 - setting the dependencies fixes NPE since MC 1.8.9
+@Mod(modid = ExtendedPASupport.MOD_ID, dependencies = "required-after:" + MumbleLink.MOD_ID, useMetadata = true)
 public class ExtendedPASupport implements Activateable, IdentityManipulator {
     public static Logger LOG;
 
